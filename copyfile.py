@@ -1,0 +1,13 @@
+a=open("d:/mca.txt","r+")
+b=open("d:/mca1.txt","r+")
+a.seek(0)
+for i in a:
+  b.write(i)
+  a.seek(0)
+  b.seek(0)
+print("printingmca file")
+print(" ***************** ")
+print(a.readlines())
+print("printing mca1 file")
+print(" ***************** ")
+print(b.readlines())
